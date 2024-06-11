@@ -32,17 +32,17 @@ def test(
 # RESULT OF JOIN (node "argument_list", preset default)
 test(a, b)
 
-# RESULT OF JOIN (node "argument_list", preset default)
+# RESULT OF SPLIT (node "argument_list", preset default)
 test(
   a,
   b
 )
 
-# RESULT OF JOIN (node "word_list", preset default)
-%w( foo bar baz )
+# RESULT OF JOIN (node "quoted_content", preset default)
+~w(foo bar baz)
 
-# RESULT OF split (node "word_list", preset default)
-%w(
+# RESULT OF split (node "quoted_content", preset default)
+~w(
   foo
   bar
   baz

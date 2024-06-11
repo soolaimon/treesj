@@ -9,14 +9,15 @@ return {
       non_bracket_node = true,
     }
   }),
-  method_parameters = lang_utils.set_preset_for_args(),
-  argument_list = lang_utils.set_preset_for_args({
-    both = {
-      enable = function(tsn)
-        return tsn:parent():type() ~= 'return'
-      end,
-    },
-  }),
+  map = { target_nodes = { 'map_content' } },
+  arguments = lang_utils.set_preset_for_args(),
+  -- argument_list = lang_utils.set_preset_for_args({
+  --   both = {
+  --     enable = function(tsn)
+  --       return tsn:parent():type() ~= 'return'
+  --     end,
+  --   },
+  -- }),
   block = lang_utils.set_preset_for_dict({
     join = {
       separator = '',
