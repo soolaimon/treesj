@@ -38,10 +38,10 @@ test(
   b
 )
 
-# RESULT OF JOIN (node "quoted_content", preset default)
+# RESULT OF JOIN (node "sigil", preset default)
 ~w(foo bar baz)
 
-# RESULT OF split (node "quoted_content", preset default)
+# RESULT OF split (node "sigil", preset default)
 ~w(
   foo
   bar

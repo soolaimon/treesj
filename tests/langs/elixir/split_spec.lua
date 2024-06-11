@@ -40,6 +40,15 @@ local data_for_split = {
     expected = { 35, 39 },
     result = { 32, 36 },
   },
+  {
+    path = PATH,
+    mode = 'split',
+    lang = LANG,
+    desc = 'lang "%s", node "quoted_content", preset default',
+    cursor = { 42, 7 },
+    expected = { 44, 49 },
+    result = { 41, 46 },
+  },
   -- {
   --   path = PATH,
   --   mode = 'split',
